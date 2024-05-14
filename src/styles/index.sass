@@ -1,0 +1,54 @@
+
+*
+  margin: 0
+  padding: 0
+
+*::-webkit-scrollbar
+  display: none
+// *
+//   margin: 0
+//   padding: 0
+//   box-sizing: border-box
+
+html, body
+  height: 100%
+
+html
+  overflow: hidden
+
+body
+  overflow: auto
+  width: calc(100vw + 20px)
+
+a, a:link, a:visited, a:hover, a:active
+  text-decoration: none
+  color: inherit
+
+h2
+  margin-bottom: 4vh
+  font-size: 6vh
+
+h3
+  font-size: 4vh
+  margin-bottom: 4vh
+
+p
+  font-size: 2.8vh
+  line-height: 4.4vh
+
+@import './pacman.scss'
+
+.loading
+  width: 100vw
+  height: 100vh
+  background-color: #CFD8DC
+  padding-left: 50vw
+  padding-right: 50vw
+  padding-top: 40vh
+
+.pacman
+  transition: opacity 1s ease-in-out
+  opacity: 1
+
+.hide-opacity
+  opacity: 0
